@@ -7,7 +7,6 @@ import br.com.apiconsumer.models.Animal
 class AnimalViewHolder(private val binding : ActivityMainBinding) :
 RecyclerView.ViewHolder(binding.root){
 
-    //criar activity para animal
     fun bind(animal: Animal){
         binding.animalName.text = animal.name;
         binding.infoText.text = animal.animal_type;
