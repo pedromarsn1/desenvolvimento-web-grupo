@@ -10,6 +10,6 @@ interface Api {
         const val BASE_URL = "https://zoo-animal-api.herokuapp.com/"
     }
 
-    @GET("/animals/rand")
-    fun getRandomAnimal() : Call<Animal>
+    @GET("/animals/rand/10")
+    fun getAnimals() : Call<List<Animal>>
 }
